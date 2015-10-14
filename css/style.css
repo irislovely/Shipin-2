@@ -1864,6 +1864,55 @@ tbody.collapse.in {
   .navbar-right .dropdown-menu-left {
     left: 0;
     right: auto; } }
+.media {
+  margin-top: 15px; }
+  .media:first-child {
+    margin-top: 0; }
+
+.media,
+.media-body {
+  zoom: 1;
+  overflow: hidden; }
+
+.media-body {
+  width: 10000px; }
+
+.media-object {
+  display: block; }
+  .media-object.img-thumbnail {
+    max-width: none; }
+
+.media-right,
+.media > .pull-right,
+.media > .search,
+.media > .login-link {
+  padding-left: 10px; }
+
+.media-left,
+.media > .pull-left,
+.media > .navbar {
+  padding-right: 10px; }
+
+.media-left,
+.media-right,
+.media-body {
+  display: table-cell;
+  vertical-align: top; }
+
+.media-middle {
+  vertical-align: middle; }
+
+.media-bottom {
+  vertical-align: bottom; }
+
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px; }
+
+.media-list {
+  padding-left: 0;
+  list-style: none; }
+
 .list-group {
   margin-bottom: 20px;
   padding-left: 0; }
@@ -3898,8 +3947,6 @@ img {
         padding-left: 10px; }
 .about-0030 .main-content {
   padding: 30px 0; }
-  .about-0030 .main-content h4 {
-    margin: 0; }
   .about-0030 .main-content .main-box {
     padding-bottom: 50px; }
     .about-0030 .main-content .main-box .main {
@@ -3909,19 +3956,6 @@ img {
         .about-0030 .main-content .main-box .main {
           border-left: none;
           padding-left: 0; } }
-      .about-0030 .main-content .main-box .main .heading {
-        text-align: left;
-        color: #3385ff;
-        border-bottom: 1px solid #cfcfcf;
-        padding: 0; }
-        .about-0030 .main-content .main-box .main .heading h4 {
-          display: inline-block;
-          vertical-align: bottom;
-          border-bottom: 1px solid #3385ff;
-          position: relative;
-          z-index: 1;
-          margin-bottom: -1px;
-          padding-bottom: 5px; }
       .about-0030 .main-content .main-box .main .article > p {
         text-indent: 20px;
         line-height: 2em;
@@ -3929,6 +3963,20 @@ img {
       .about-0030 .main-content .main-box .main .article > img {
         width: 100%;
         margin: 10px 0; }
+
+.heading3 {
+  text-align: left;
+  color: #3385ff;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 0; }
+  .heading3 h4 {
+    display: inline-block;
+    vertical-align: bottom;
+    border-bottom: 1px solid #3385ff;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -1px;
+    padding-bottom: 5px; }
 
 .search-result-0040 .grid .gallery-item {
   padding: 15px 0;
@@ -4038,21 +4086,6 @@ img {
 
 .main-info-0130 .main-box {
   padding-bottom: 50px; }
-  .main-info-0130 .main-box .heading {
-    text-align: left;
-    color: #666666;
-    border-bottom: 1px solid #cfcfcf;
-    padding: 0;
-    margin: 0;
-    margin-top: 20px; }
-    .main-info-0130 .main-box .heading h4 {
-      display: inline-block;
-      vertical-align: bottom;
-      border-bottom: 1px solid #3385ff;
-      position: relative;
-      z-index: 1;
-      margin-bottom: -1px;
-      padding-bottom: 5px; }
   .main-info-0130 .main-box .grid .normal {
     padding: 15px;
     padding-bottom: 0;
@@ -4081,6 +4114,9 @@ img {
       padding: 0; }
     .main-info-0130 .main-box .comment-section .comment-box, .main-info-0130 .main-box .comment-section .reply-box {
       margin: 15px 0; }
+    .main-info-0130 .main-box .comment-section .avatar > img {
+      max-width: 50px;
+      height: 50px; }
     .main-info-0130 .main-box .comment-section .reply {
       background-color: #eeeeee;
       padding: 15px; }
@@ -4093,3 +4129,19 @@ img {
         color: #666666; }
         .main-info-0130 .main-box .comment-section .reply .reply-btn:hover {
           text-decoration: none; }
+
+.heading2 {
+  text-align: left;
+  color: #666666;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px; }
+  .heading2 h4 {
+    display: inline-block;
+    vertical-align: bottom;
+    border-bottom: 1px solid #3385ff;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -1px;
+    padding-bottom: 5px; }

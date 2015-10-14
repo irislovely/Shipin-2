@@ -62,7 +62,7 @@ html
 			.container.grid
 				- for (i=1; i<21; i++)
 					//-square
-					.gallery-item.col-sm-3.col-xs-6
+					.gallery-item.col-sm-3.col-xs-12
 						figure
 							a(href="#")
 								.image(data-content="07:25")
@@ -86,6 +86,7 @@ html
 								form#gopage                
 									input.ipt-go(type="text")
 									input.btn-go(type="submit" value="GO")
+		include inc/contact.jade
 		include inc/footer.jade
 		script.
 			$(".custom-select select").change(function() {
