@@ -6,10 +6,21 @@ html
 		include inc/header.jade
 		.top-info-0130
 			.container
-				.info-table.col-xs-12
-					.avatar-box.col-xs-3
-					.details-box.col-xs-6
-					.btn-box.col-xs-3
+				.info-table.row
+					.avatar-box.col-sm-3.col-xs-12
+						.box-content
+							#outer-circle
+								img.img-circle(src="img/0130/avatar.png")
+								#inner-circle
+									span 认证
+					.details-box.col-sm-7.col-xs-12
+						.box-content
+							p 姓名：张先生
+							p 姓名：张先生
+					.btn-box.col-sm-2.col-xs-12
+						.box-content
+							p 姓名：张先生
+							p 姓名：张先生
 		.gallery-0020
 			.container.grid
 				- for (i=1; i<21; i++)
