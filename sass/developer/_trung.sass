@@ -58,75 +58,76 @@
 .gallery-0020
 	.grid
 		padding: 0
-		.gallery-item
-			padding: 30px 15px 5px 15px
-			figure
-				.image
-					position: relative
-					img
-						width: 100%
-						display: block
-					&:before
-						content: attr(data-content)
-						position: absolute
-						color: #fff
-						z-index: 1
-						bottom: 0
-						right: 0
-						padding: 5px
-						font-size: 0.75em
-						text-align: center
-						background: black
-						box-sizing: border-box
-						-moz-box-sizing: border-box
-					&:after
-						content: '\A'
-						position: absolute
-						width: 100%
-						height: 100%
-						top: 0
-						left: 0
-						background: rgba(0,0,0,0.6)
-						opacity: 1
-						transition: all 0.5s
-						-webkit-transition: all 0.5s
-					&:hover:after
-						opacity: 0
-				figcaption
-					a
-						text-align: center
-						color: #333333
-						&:hover	
-							text-decoration: none
-		.page
-			padding: 30px 15px
-			ul
-				list-style: none
-				padding: 0
-				margin: 0
-				display: inline-block
+	.gallery-item
+		padding: 30px 15px 5px 15px
+		figcaption
+			a
 				text-align: center
-				li
-					list-style: none
-					float: left
-					i
-						font-size: 18px
-					a, .ipt-go, .btn-go
-						text-decoration: none
-						display: block
-						border: 1px solid #d5d5d5
-						margin: 5px
-						padding: 5px 10px
-						color: #666666
-					.ipt-go, .btn-go
-						width: 40px
-						display: inline-block
-						margin: 5px 0
-						margin-right: -5px
-			.active > a
-				background-color: #3385ff
-				border: 1px solid transparent
-				color: #fff
+				color: #333333
+				&:hover	
+					text-decoration: none
+			span
+				max-height: 40px
+	.image
+		position: relative
+		img
+			width: 100%
+			display: block
+		&:before
+			content: attr(data-content)
+			position: absolute
+			color: #fff
+			z-index: 1
+			bottom: 0
+			right: 0
+			padding: 5px
+			font-size: 0.75em
+			text-align: center
+			background: black
+			box-sizing: border-box
+			-moz-box-sizing: border-box
+		&:after
+			content: '\A'
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			background: rgba(0,0,0,0.6)
+			opacity: 1
+			transition: all 0.5s
+			-webkit-transition: all 0.5s
+		&:hover:after
+			opacity: 0
+	.page
+		padding: 30px 15px
+		ul
+			list-style: none
+			padding: 0
+			margin: 0
+			display: inline-block
+			text-align: center
+			li
+				list-style: none
+				float: left
+				i
+					font-size: 18px
+				a, .ipt-go, .btn-go
+					text-decoration: none
+					display: block
+					border: 1px solid #d5d5d5
+					margin: 5px
+					padding: 5px 10px
+					color: #666666
+				.ipt-go, .btn-go
+					width: 40px
+					display: inline-block
+					margin: 5px 0
+					margin-right: -5px
+		.active > a
+			background-color: #3385ff
+			border: 1px solid transparent
+			color: #fff
 .about-0030
 	.sidebar
 		padding-bottom: 30px
@@ -134,61 +135,61 @@
 			padding-right: 50px
 			@media (max-width: 767px)
 				padding-right: 0
+		.panel-default
+			border: none
+			-webkit-box-shadow: none
+			box-shadow: none
+		.panel-heading
+			background: none
+			border-bottom: 1px solid #cfcfcf
+			a.collapsed
+				color: #333333
+			a
+				color: #3385ff
+				display: block
+				position: relative
+				&:hover
+					text-decoration: none
+				h4
+					display: inline-block
+				.caret
+					display: inline-block
+					position: absolute
+					right: 0
+					top: 8px
+			+ .panel-collapse > .list-group
+				border-top: none
+		.list-group-item, .list-group-item:last-child
+			border: none
+			border-bottom: 1px dotted #bfbfbf
+			background: none
+			border-radius: 0
+			a
+				color: #666666
+				&:hover
+					color: #3385ff
+					text-decoration: none
+		#accordion2
+			padding-right: 0
 			.panel-default
-				border: none
-				-webkit-box-shadow: none
-				box-shadow: none
-				.panel-heading
-					background: none
-					border-bottom: 1px solid #cfcfcf
-					a.collapsed
-						color: #333333
-					a
-						color: #3385ff
-						display: block
-						position: relative
-						&:hover
-							text-decoration: none
-						h4
-							display: inline-block
-						.caret
-							display: inline-block
-							position: absolute
-							right: 0
-							top: 8px
-					+ .panel-collapse > .list-group
-						border-top: none
-				.list-group-item, .list-group-item:last-child
-					border: none
-					border-bottom: 1px dotted #bfbfbf
-					background: none
-					border-radius: 0
-					a
-						color: #666666
-						&:hover
-							color: #3385ff
-							text-decoration: none
-			#accordion2
-				padding-right: 0
-				.panel-default
-					padding-left: 10px
+				padding-left: 10px
 	.main-content
 		padding: 30px 0
-		.main-box
-			padding-bottom: 50px
-			.main
-				border-left: 1px solid #d6d6d6
-				padding-left: 50px
-				@media (max-width: 767px)
-					border-left: none
-					padding-left: 0
-				.article > p
-					text-indent: 20px
-					line-height: 2em
-					margin: 5px 0
-				.article > img
-					width: 100%
-					margin: 10px 0
+	.main-box
+		padding-bottom: 50px
+	.main
+		border-left: 1px solid #d6d6d6
+		padding-left: 50px
+		@media (max-width: 767px)
+			border-left: none
+			padding-left: 0
+	.article > p
+		text-indent: 20px
+		line-height: 2em
+		margin: 5px 0
+	.article > img
+		width: 100%
+		margin: 10px 0
 .heading3
 	text-align: left
 	color: #3385ff
@@ -203,29 +204,27 @@
 		margin-bottom: -1px
 		padding-bottom: 5px
 .search-result-0040
-	.grid
-		.gallery-item
-			padding: 15px 0
-			border-bottom: 1px dotted #bfbfbf
-			figure
-				.image
-					margin-right: 20px
-					@media (max-width: 478px)
-						width: 100%
-						margin-right: 0
-						margin-bottom: 20px
-				figcaption
-					vertical-align: top
-					a
-						display: inline-block
-						h4
-							margin-bottom: 5px
-					.date
-						font-size: 12px
-						color: #999999
-					.description
-						color: #666666
-						font-size: 12px
+	.gallery-item
+		padding: 15px 0
+		border-bottom: 1px dotted #bfbfbf
+		figcaption
+			vertical-align: top
+			a
+				display: inline-block
+				h4
+					margin-bottom: 5px
+			.date
+				font-size: 12px
+				color: #999999
+			.description
+				color: #666666
+				font-size: 12px
+	.image
+		margin-right: 20px
+		@media (max-width: 478px)
+			width: 100%
+			margin-right: 0
+			margin-bottom: 20px
 .top-info-0130
 	padding: 15px 0
 	background-color: #f5f5f5
@@ -233,125 +232,124 @@
 		padding: 0
 		margin: 0
 		border: 1px solid #e7e7e7
-		.avatar-box, .details-box, .btn-box
-			text-align: center
-			background-color: white
-			min-height: 270px
-			padding: 0
-			@media (max-width: 767px)
-				min-height: 100px
-		.avatar-box >	.box-content
-			padding: 5% 15% 15% 15%
-			@media (max-width: 767px)
-				padding: 20px 50px 50px 50px
-		#outer-circle
-			position: relative
-			width: 100%
-			.img-circle
-				border: 1px solid #e7e7e7
-				border-radius: 50%
-		#inner-circle
-			position: absolute
-			background: white
-			border: 2px solid #41749c
+	.avatar-box, .details-box, .btn-box
+		text-align: center
+		background-color: white
+		min-height: 270px
+		padding: 0
+		@media (max-width: 767px)
+			min-height: 100px
+	.avatar-box >	.box-content
+		padding: 5% 15% 15% 15%
+		@media (max-width: 767px)
+			padding: 20px 50px 50px 50px
+	#outer-circle
+		position: relative
+		width: 100%
+		.img-circle
+			border: 1px solid #e7e7e7
 			border-radius: 50%
-			height: 40px
-			width: 40px
-			left: 50%
-			margin: -20px 0px 0px -20px
-			span
-				font-size: 12px
-				line-height: 3em
-		.details-box
-			border-left: 1px solid #e7e7e7
-			border-right: 1px solid #e7e7e7
-			@media (max-width: 767px)
-				border: 1px solid #e7e7e7
-			.box-content
-				text-align: left
-				.info-detail
-					border-bottom: 1px solid #e7e7e7
-					padding: 10px 20px
+	#inner-circle
+		position: absolute
+		background: white
+		border: 2px solid #41749c
+		border-radius: 50%
+		height: 40px
+		width: 40px
+		left: 50%
+		margin: -20px 0px 0px -20px
+		span
+			font-size: 12px
+			line-height: 3em
+	.details-box
+		border-left: 1px solid #e7e7e7
+		border-right: 1px solid #e7e7e7
+		@media (max-width: 767px)
+			border: 1px solid #e7e7e7
+		.box-content
+			text-align: left
+			.info-detail
+				border-bottom: 1px solid #e7e7e7
+				padding: 10px 20px
+				p
+					margin: 0
+			.info-detail#left
+				border-right: 1px solid #e7e7e7
+			.info-detail#big
+				border: none
+	.btn-box 
+		.box-content
+			padding: 10px
+			a
+				display: block
+				@media (max-width: 767px)
+					display: inline-block
+					margin: 0 20px
+				p
+					color: #999999
+					.fi
+						display: block
+						font-size: 2em
+						margin: 0 auto
+						width: 50px
+						height: 50px
+						line-height: 50px
+						border: 2px solid #ababab
+						border-radius: 50%
+				&:hover
+					text-decoration: none
 					p
-						margin: 0
-				.info-detail#left
-					border-right: 1px solid #e7e7e7
-				.info-detail#big
-					border: none
-		.btn-box 
-			.box-content
-				padding: 10px
-				a
-					display: block
-					@media (max-width: 767px)
-						display: inline-block
-						margin: 0 20px
-					p
-						color: #999999
+						color: #3385ff
 						.fi
-							display: block
-							font-size: 2em
-							margin: 0 auto
-							width: 50px
-							height: 50px
-							line-height: 50px
-							border: 2px solid #ababab
-							border-radius: 50%
-					&:hover
-						text-decoration: none
-						p
-							color: #3385ff
-							.fi
-								color: white
-								border: 2px solid #3385ff
-								background-color: #3385ff
+							color: white
+							border: 2px solid #3385ff
+							background-color: #3385ff
 .main-info-0130
 	.main-box
 		padding-bottom: 50px
-		.grid
-			.normal
-				padding: 15px
-				padding-bottom: 0
-				margin: 0
-				border: none
-				color: #3385ff
-				h4
-					border: none
-					padding: 0
-			.item
-				border-bottom: 1px dotted #bfbfbf
-				margin: 0
-				padding-bottom: 20px
-				#small-text-right
-					margin: 10px 0
-					text-align: right
-					color: #999999
-					font-size: 12px
-		.comment-section
-			overflow: hidden
-			border-bottom: 1px dotted #bfbfbf
-			margin: 0 15px
-			padding: 20px 0
-			.normal
-				color: #333333
-				padding: 0
-			.comment-box, .reply-box
-				margin: 15px 0
-			.avatar > img
-				max-width: 50px
-				height: 50px
-			.reply
-				background-color: #eeeeee
-				padding: 15px
-				.blue-date
-					color: #336995
-				.reply-btn
-					position: relative
-					float: right
-					cursor: pointer
-					color: #666666
-					&:hover
-						text-decoration: none
+	.normal
+		padding: 15px
+		padding-bottom: 0
+		margin: 0
+		border: none
+		color: #3385ff
+		h4
+			border: none
+			padding: 0
+	.item
+		border-bottom: 1px dotted #bfbfbf
+		margin: 0
+		padding-bottom: 20px
+	#small-text-right
+		margin: 10px 0
+		text-align: right
+		color: #999999
+		font-size: 12px
+	.comment-section
+		overflow: hidden
+		border-bottom: 1px dotted #bfbfbf
+		margin: 0 15px
+		padding: 20px 0
+		.normal
+			color: #333333
+			padding: 0
+	.comment-box, .reply-box
+		margin: 15px 0
+	.avatar > img
+		max-width: 50px
+		height: 50px
+	.reply
+		background-color: #eeeeee
+		padding: 15px
+		.blue-date
+			color: #336995
+		.reply-btn
+			position: relative
+			float: right
+			cursor: pointer
+			color: #666666
+			&:hover
+				text-decoration: none
 .heading2
 	text-align: left
 	color: #666666
