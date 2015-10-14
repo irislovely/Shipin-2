@@ -1,0 +1,34 @@
+doctype html
+html
+	include inc/head.jade
+	body
+		- cur = 0
+		include inc/header.jade
+		.top-info-0130
+			.container
+				.info-table.row
+					.avatar-box.col-sm-3.col-xs-12
+						.box-content
+							#outer-circle
+								img.img-circle(src="img/0130/avatar.png")
+								#inner-circle
+									span 认证
+					.details-box.col-sm-9.col-xs-12
+						.box-content
+							.info-detail#left.col-xs-6
+								p 姓名：张先生
+							.info-detail.col-xs-6
+								p 职位：项目经理
+							.info-detail#left.col-xs-6
+								p 公司：
+							.info-detail.col-xs-6
+								p 个人网站：
+							.info-detail#big.col-xs-12
+								p 自我介绍：
+		
+		include inc/footer.jade
+		script.
+			$(".custom-select select").change(function() {
+				var t = $(this).find(":selected").text();
+				$(this).next(".select-text").text(t)
+			}).trigger("change");
