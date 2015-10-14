@@ -65,6 +65,7 @@
 					position: relative
 					img
 						width: 100%
+						display: block
 					&:before
 						content: attr(data-content)
 						position: absolute
@@ -126,3 +127,107 @@
 				background-color: #3385ff
 				border: 1px solid transparent
 				color: #fff
+.about-0030
+	.sidebar
+		padding-bottom: 30px
+		.panel-group
+			padding-right: 50px
+			@media (max-width: 767px)
+				padding-right: 0
+			.panel-default
+				border: none
+				-webkit-box-shadow: none
+    		box-shadow: none
+				.panel-heading
+					background: none
+					border-bottom: 1px solid #cfcfcf
+					a.collapsed
+						color: #333333
+					a
+						color: #3385ff
+						display: block
+						position: relative
+						&:hover
+							text-decoration: none
+						h4
+							display: inline-block
+						.caret
+							display: inline-block
+							position: absolute
+							right: 0
+							top: 8px
+					+ .panel-collapse > .list-group
+						border-top: none
+				.list-group-item, .list-group-item:last-child
+					border: none
+					border-bottom: 1px dotted #bfbfbf
+					background: none
+					border-radius: 0
+					a
+						color: #666666
+						&:hover
+							color: #3385ff
+							text-decoration: none
+			#accordion2
+				padding-right: 0
+				.panel-default
+					padding-left: 10px
+	.main-content
+		padding: 30px 0
+		h4
+			margin: 0
+		.main-box
+			padding-bottom: 50px
+			.main
+				border-left: 1px solid #d6d6d6
+				padding-left: 50px
+				@media (max-width: 767px)
+					border-left: none
+					padding-left: 0
+				.heading
+					text-align: left
+					color: #3385ff
+					border-bottom: 1px solid #cfcfcf
+					padding: 0
+					h4
+						display: inline-block
+						vertical-align: bottom
+						border-bottom: 1px solid #3385ff
+						position: relative
+						z-index: 1
+						margin-bottom: -1px
+						padding-bottom: 5px
+				.article > p
+					text-indent: 20px
+					line-height: 2em
+					margin: 5px 0
+				.article > img
+					width: 100%
+					margin: 10px 0
+.search-result-0040
+	.grid
+		.gallery-item
+			padding: 15px 0
+			border-bottom: 1px dotted #bfbfbf
+			figure
+				.image
+					margin-right: 20px
+					@media (max-width: 478px)
+						width: 100%
+						margin-right: 0
+						margin-bottom: 20px
+				figcaption
+					vertical-align: top
+					a
+						display: inline-block
+						h4
+							margin-bottom: 5px
+					.date
+						font-size: 12px
+						color: #999999
+					.description
+						color: #666666
+						font-size: 12px
+.top-info-0130
+	padding: 15px 0
+	background-color: #f5f5f5

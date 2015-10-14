@@ -40,25 +40,24 @@
     <div class="about-0030">
       <div class="container">
         <div class="main-content">
-          <div class="col-sm-3 col-md-2 sidebar">
-            <div class="panel-group">
+          <div class="col-xs-12 col-sm-3 sidebar">
+            <div id="accordion" class="panel-group">
               <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title"><a data-toggle="collapse" href="#collapse1">关于我们</a></h4>
-                </div>
-                <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-heading"><a data-toggle="collapse" href="#collapse1" aria-expanded="true"> 
+                    <h4 class="panel-title">关于我们</h4><span class="caret"></span></a></div>
+                <div id="collapse1" aria-expanded="true" class="panel-collapse collapse in">
                   <ul class="list-group">
-                    <li class="list-group-item">栏目名称</li>
-                    <li class="list-group-item">栏目名称</li>
-                    <li class="list-group-item">栏目名称</li>
-                    <li class="list-group-item">栏目名称</li>
-                    <li class="list-group-item">栏目名称</li>
+                    <li class="list-group-item"> <a href="#">栏目名称</a></li>
+                    <li class="list-group-item"> <a href="#">栏目名称</a></li>
+                    <li class="list-group-item"> <a href="#">栏目名称</a></li>
+                    <li class="list-group-item"> <a href="#">栏目名称</a></li>
+                    <li class="list-group-item"> <a href="#">栏目名称</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="main-box col-sm-9 col-md-10">
+          <div class="main-box col-xs-12 col-sm-9">
             <div class="main">
               <div class="heading">
                 <h4>关于我们 / About Us</h4>
@@ -81,13 +80,21 @@
         <ul class="info">
           <li><span>&copy;BAIDU</span></li>
           <li> <span>京ICP备13038739号 </span></li>
-          <li><span>  <a href="http://bbctop.com">Powered  by  BBCtop.com</a></span></li>
         </ul>
       </div>
     </footer>
+    <div id="confirm" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">请注意!您即将离开百度PC站网站建设指南页面。 </h4>
+          </div>
+          <div class="modal-footer section-btn-center"><a href="#" data-dismiss="modal" class="btn">不离开</a><a href="http://bbctop.com/index.php?act=casese.casese&amp;cid=7" target="_blank" class="btn">确定离开</a></div>
+        </div>
+      </div>
+    </div>
     <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/bootstrap/transition.js"></script>
-    <script src="js/bootstrap/collapse.js"></script>
     <script src="js/core-dist.js"></script>
   </body>
 </html>

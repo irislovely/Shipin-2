@@ -7,20 +7,26 @@ html
 		.about-0030
 			.container
 				.main-content
-					.col-sm-3.col-md-2.sidebar
-						.panel-group
+					.col-xs-12.col-sm-3.sidebar
+						.panel-group#accordion
 							.panel.panel-default
 								.panel-heading
-									h4.panel-title
-										a(data-toggle="collapse" href="#collapse1") 关于我们
-								.panel-collapse.collapse#collapse1
+										a(data-toggle="collapse" href="#collapse1" aria-expanded="true") 
+											h4.panel-title 关于我们
+											span.caret
+								.panel-collapse.collapse.in#collapse1(aria-expanded="true")
 									ul.list-group
-										li.list-group-item 栏目名称
-										li.list-group-item 栏目名称
-										li.list-group-item 栏目名称
-										li.list-group-item 栏目名称
-										li.list-group-item 栏目名称
-					.main-box.col-sm-9.col-md-10
+										li.list-group-item 
+											a(href="#") 栏目名称
+										li.list-group-item 
+											a(href="#") 栏目名称
+										li.list-group-item 
+											a(href="#") 栏目名称
+										li.list-group-item 
+											a(href="#") 栏目名称
+										li.list-group-item 
+											a(href="#") 栏目名称
+					.main-box.col-xs-12.col-sm-9
 						.main
 							.heading
 								h4 关于我们 / About Us
